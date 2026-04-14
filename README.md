@@ -45,8 +45,7 @@ Defines the custom Mininet topology with:
 - 2 Hosts → h1, h2
 - 3 Switches → s1, s2, s3
 
-Connection path:
-h1 → s1 → s2 → s3 → h2
+Connection path: `h1 → s1 → s2 → s3 → h2`
 
 ## pox_path.py
 Custom POX controller that performs:
@@ -90,8 +89,7 @@ git clone https://github.com/noxrepo/pox.git
 
 ## Step 3: Place Controller File
 
-Copy `pox_path.py` into:
-pox/pox/forwarding/
+Copy `pox_path.py` into: `pox/pox/forwarding/`
 
 ## Step 4: Run POX Controller
 
@@ -120,14 +118,7 @@ Command:
 nodes
 ```
 
-Expected devices:
-
-- h1
-- h2
-- s1
-- s2
-- s3
-- c0
+Expected devices: h1, h2, s1, s2, s3, c0
 
 **Nodes**
 
@@ -195,16 +186,7 @@ Expected Result:
 
 # Logging / Monitoring Output
 
-The controller logs packet movement through switches.
-
-Example:
-Packet at s1 | src -> dst | in=2 out=1
-
-Packet at s2 | src -> dst | in=1 out=1
-
-Packet at s3 | src -> dst | in=1 out=65531
-
-This confirms packet traversal and forwarding decisions.
+The controller logs packet movement through switches. This confirms packet traversal and forwarding decisions.
 
 **Controller Logs**
 
