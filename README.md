@@ -66,8 +66,8 @@ h1 ---- s1 ---- s2 ---- s3 ---- h2
 ```
 
 **Custom Topology File**
-![Topology](image.png)
 
+![Topology](screenshots/image.png)
 ---
 
 # 5. Setup and Installation Steps
@@ -170,8 +170,7 @@ Expected devices:
 
 **Nodes**
 
-![Nodes](image-1.png)
-
+![Nodes](screenshots/image-1.png)
 ---
 
 ## Test 2: Ping Connectivity
@@ -189,8 +188,7 @@ Expected Result:
 
 **Ping Output**
 
-![Ping Output](image-2.png)
-
+![Ping Output](screenshots/image-2.png)
 ---
 
 ## Test 3: Throughput Measurement
@@ -208,8 +206,7 @@ Expected Result:
 
 **iperf Output**
 
-![iperf](image-3.png)
-
+![iperf](screenshots/image-3.png)
 ---
 
 # 8. Flow Table Verification
@@ -232,8 +229,7 @@ Expected Result:
 
 **Flow Table - s1,s2,s3**
 
-![Flow Table](image-4.png)
-
+![Flow Table](screenshots/image-4.png)
 ---
 
 # 9. Logging / Monitoring Output
@@ -251,8 +247,7 @@ This confirms packet traversal and forwarding decisions.
 
 **Controller Logs**
 
-![Controller Logs](image-5.png)
-
+![Controller Logs](screenshots/image-5.png)
 ---
 
 # 10. Link Failure Testing
@@ -273,8 +268,7 @@ Expected Result:
 
 **Link Down Test**
 
-![Link Down Test](image-6.png)
-
+![Link Down Test](screenshots/image-6.png)
 ---
 
 # 11. Link Recovery Testing
@@ -295,7 +289,7 @@ Expected Result:
 
 **Link Up Recovery Test**
 
-![Link Up Recovery Test](image-7.png)
+![Link Up Recovery Test](screenshots/image-7.png)
 ---
 
 # 12. Performance Observation and Analysis
@@ -380,5 +374,7 @@ h1 iperf -c h2
 ---
 
 By:
+
 **Name:** S N Niharika
+
 **SRN:** PES2UG24CS414
