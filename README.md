@@ -65,9 +65,8 @@ Custom POX controller that performs:
 h1 ---- s1 ---- s2 ---- s3 ---- h2
 ```
 
-**Screenshot: Custom Topology File**
-
-*Insert screenshot here*
+**Custom Topology File**
+![Topology](image.png)
 
 ---
 
@@ -101,9 +100,6 @@ cd ~/pox
 ./pox.py log.level --DEBUG openflow.of_01 forwarding.pox_path
 ```
 
-**Screenshot: Controller Started Successfully**
-
-*Insert screenshot here*
 
 ## Step 5: Run Mininet Topology
 
@@ -111,9 +107,6 @@ cd ~/pox
 sudo mn --custom topology.py --topo mypath --controller remote
 ```
 
-**Screenshot: Mininet Topology Running**
-
-*Insert screenshot here*
 
 ---
 
@@ -175,9 +168,8 @@ Expected devices:
 - s3
 - c0
 
-**Screenshot: Nodes Output**
-
-*Insert screenshot here*
+**Nodes**
+![Nodes](image-1.png)
 
 ---
 
@@ -194,9 +186,8 @@ Expected Result:
 - Successful packet delivery
 - 0% packet loss
 
-**Screenshot: Ping Output**
-
-*Insert screenshot here*
+**Ping Output**
+![Ping Output](image-2.png)
 
 ---
 
@@ -213,9 +204,8 @@ Expected Result:
 
 - High bandwidth throughput displayed
 
-**Screenshot: iperf Output**
-
-*Insert screenshot here*
+**iperf Output**
+![iperf](image-3.png)
 
 ---
 
@@ -237,17 +227,8 @@ Expected Result:
 - Output actions present
 - Dynamically installed flows visible
 
-**Screenshot: Flow Table - s1**
-
-*Insert screenshot here*
-
-**Screenshot: Flow Table - s2**
-
-*Insert screenshot here*
-
-**Screenshot: Flow Table - s3**
-
-*Insert screenshot here*
+**Flow Table - s1,s2,s3**
+![Flow Table](image-4.png)
 
 ---
 
@@ -262,9 +243,8 @@ Packet at s3 | src -> dst | in=1 out=65531
 
 This confirms packet traversal and forwarding decisions.
 
-**Screenshot: Controller Logs**
-
-*Insert screenshot here*
+**Controller Logs**
+![Controller Logs](image-5.png)
 
 ---
 
@@ -284,9 +264,8 @@ Expected Result:
 - Ping fails
 - 100% packet loss
 
-**Screenshot: Link Down Test**
-
-*Insert screenshot here*
+**Link Down Test**
+![Link Down Test](image-6.png)
 
 ---
 
@@ -306,10 +285,8 @@ Expected Result:
 - Connectivity restored
 - Ping successful
 
-**Screenshot: Link Up Recovery Test**
-
-*Insert screenshot here*
-
+**Link Up Recovery Test**
+![Link Up Recovery Test](image-7.png)
 ---
 
 # 12. Performance Observation and Analysis
