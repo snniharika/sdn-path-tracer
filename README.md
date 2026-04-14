@@ -169,6 +169,7 @@ Expected devices:
 - c0
 
 **Nodes**
+
 ![Nodes](image-1.png)
 
 ---
@@ -187,6 +188,7 @@ Expected Result:
 - 0% packet loss
 
 **Ping Output**
+
 ![Ping Output](image-2.png)
 
 ---
@@ -205,6 +207,7 @@ Expected Result:
 - High bandwidth throughput displayed
 
 **iperf Output**
+
 ![iperf](image-3.png)
 
 ---
@@ -228,6 +231,7 @@ Expected Result:
 - Dynamically installed flows visible
 
 **Flow Table - s1,s2,s3**
+
 ![Flow Table](image-4.png)
 
 ---
@@ -238,12 +242,15 @@ The controller logs packet movement through switches.
 
 Example:
 Packet at s1 | src -> dst | in=2 out=1
+
 Packet at s2 | src -> dst | in=1 out=1
+
 Packet at s3 | src -> dst | in=1 out=65531
 
 This confirms packet traversal and forwarding decisions.
 
 **Controller Logs**
+
 ![Controller Logs](image-5.png)
 
 ---
@@ -265,6 +272,7 @@ Expected Result:
 - 100% packet loss
 
 **Link Down Test**
+
 ![Link Down Test](image-6.png)
 
 ---
@@ -286,6 +294,7 @@ Expected Result:
 - Ping successful
 
 **Link Up Recovery Test**
+
 ![Link Up Recovery Test](image-7.png)
 ---
 
@@ -314,7 +323,7 @@ Logs confirm path traversal and switch behavior.
 
 ---
 
-# 13. Functional Correctness
+# 14. Conclusion
 
 The project successfully demonstrates:
 
@@ -327,11 +336,7 @@ The project successfully demonstrates:
 - Link failure handling
 - Link recovery
 
----
-
-# 14. Conclusion
-
-This project demonstrates how SDN enables programmable and centralized network control. Using POX and Mininet, dynamic packet forwarding and automated flow management were implemented successfully.
+SDN enables programmable and centralized network control. Using POX and Mininet, dynamic packet forwarding and automated flow management implemented successfully.
 
 The controller learns host locations, installs forwarding rules, logs packet movement, and responds correctly during topology changes.
 
@@ -371,3 +376,9 @@ h1 iperf -c h2
 2. Mininet Documentation
 3. OpenFlow Switch Specification
 4. Python Official Documentation
+
+---
+
+By:
+**Name:** S N Niharika
+**SRN:** PES2UG24CS414
