@@ -1,4 +1,4 @@
-# SDN Path Tracer using POX and Mininet
+# SDN Path Tracer using Mininet and POX
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ The controller dynamically learns host locations, installs OpenFlow rules in swi
 
 ---
 
-# 1. Problem Statement
+# Problem Statement
 
 Traditional networks depend on static forwarding behavior and manual configuration. SDN separates the control plane from the data plane, enabling programmable and centralized network management.
 
@@ -25,7 +25,7 @@ The objective of this project is to:
 
 ---
 
-# 2. Technologies Used
+# Technologies Used
 
 - Python
 - POX Controller
@@ -37,7 +37,7 @@ The objective of this project is to:
 
 ---
 
-# 3. Project Files
+# Project Files
 
 ## topology.py
 Defines the custom Mininet topology with:
@@ -59,7 +59,7 @@ Custom POX controller that performs:
 
 ---
 
-# 4. Network Topology
+# Network Topology
 
 ```text
 h1 ---- s1 ---- s2 ---- s3 ---- h2
@@ -70,7 +70,7 @@ h1 ---- s1 ---- s2 ---- s3 ---- h2
 ![Topology](screenshots/image.png)
 ---
 
-# 5. Setup and Installation Steps
+# Setup and Installation Steps
 
 ## Step 1: Install Required Tools
 
@@ -110,46 +110,7 @@ sudo mn --custom topology.py --topo mypath --controller remote
 
 ---
 
-# 6. Source Code Explanation
-
-## topology.py Logic
-
-- Creates two hosts
-- Creates three switches
-- Adds links in linear order
-- Registers custom topology as `mypath`
-
-## pox_path.py Logic
-
-### MAC Learning
-
-Stores source MAC address and incoming port:
-
-```python
-mac_to_port[dpid][src] = in_port
-```
-
-### Known Destination
-
-If destination MAC is known:
-
-- Determine output port
-- Install flow rule
-- Forward packet directly
-
-### Unknown Destination
-
-If destination MAC is unknown:
-
-- Flood packet to discover host
-
-### Logging
-
-Logs switch ID, source, destination, input port, output port.
-
----
-
-# 7. Working Demonstration
+# Working Demonstration
 
 ## Test 1: Node Verification
 
@@ -232,7 +193,7 @@ Expected Result:
 ![Flow Table](screenshots/image-4.png)
 ---
 
-# 9. Logging / Monitoring Output
+# Logging / Monitoring Output
 
 The controller logs packet movement through switches.
 
@@ -250,7 +211,7 @@ This confirms packet traversal and forwarding decisions.
 ![Controller Logs](screenshots/image-5.png)
 ---
 
-# 10. Link Failure Testing
+# Link Failure Testing
 
 A network failure is simulated by disabling the link between s2 and s3.
 
@@ -271,7 +232,7 @@ Expected Result:
 ![Link Down Test](screenshots/image-6.png)
 ---
 
-# 11. Link Recovery Testing
+# Link Recovery Testing
 
 Restore the failed link.
 
@@ -292,7 +253,7 @@ Expected Result:
 ![Link Up Recovery Test](screenshots/image-7.png)
 ---
 
-# 12. Performance Observation and Analysis
+# Performance Observation and Analysis
 
 ## Latency Analysis
 
@@ -373,7 +334,7 @@ h1 iperf -c h2
 
 ---
 
-By:
+Project by:
 
 **Name:** S N Niharika
 
